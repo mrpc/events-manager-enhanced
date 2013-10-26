@@ -4,7 +4,7 @@
   Plugin Name: Events Manager Enhanced
   Version: 0.1
   Plugin URI: http://wp-events-plugin.com
-  Description: Enhancements on Events Manager plugin
+  Description: Enhancements on Events Manager plugin. Adds support for qTranslate.
   Author: Pramnnos Hosting Ltd.
   Author URI: http://www.pramhost.com
  */
@@ -18,9 +18,6 @@ if (!defined('SP')) {
     define('SP', true);
 }
 
-#if (is_admin()) {
-#    require_once dirname(__FILE__) . '/adminpanel.php';
-#}
 
 add_action('plugins_loaded', 'emeInit', 0);
 
